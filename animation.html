@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        div{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            animation:csi 10s linear infinite alternate ;
+            background-color: brown;
+            margin: 20px;
+        }
+            @keyframes csi {
+                0%{
+                    top: 0;
+                    left: 0;
+                    border-radius: 0%;
+                    background-color: red;
+                }
+                25%{
+                    top: 0%;
+                    left: 500px;
+                    border-radius: 25%;
+                    background-color: purple;
+                }
+                50%{
+                    top: 500px;
+                    left: 500px;
+                    border-radius: 50%;
+                    background-color: pink;
+                }
+                75%{
+                    top: 500px;
+                    left: 0px;
+                    border-radius: 75%;
+                    background-color: yellow;
+                }
+                100%{
+                    top: 0px;
+                    left: 0px;
+                    border-radius: 0%;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
